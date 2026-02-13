@@ -24,3 +24,24 @@ export default function DogGallery() {
 
     load();
   }, []);
+
+  if (isLoading) return <div>download</div>;
+
+  return (
+    <div>
+      <h1>Cобаки</h1>
+
+      <div>
+        {dogs.map((url, i) => (
+          <img
+            key={i}
+            src={url}
+            alt={"dog " + i}
+            width="250"
+            style={{ marginRight: 10, marginBottom: 10 }}
+          />
+        ))}
+      </div>
+    </div>
+  );
+}

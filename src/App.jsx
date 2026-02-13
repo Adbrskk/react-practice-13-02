@@ -1,7 +1,5 @@
-import DogGallery from "./DogGallery";
+import DogGallery from "./DogGallery/DogGallery";
 
-function App() {
+export default function App() {
   return <DogGallery />;
 }
-
-export default App;
